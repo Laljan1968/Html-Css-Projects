@@ -10,6 +10,8 @@ body{background-color: black;
 }
 
 .card{
+    display: flex;
+    flex-direction: column;
     color: #fff;
     width: 90%;
     max-width: 470px;
@@ -28,7 +30,7 @@ body{background-color: black;
 
 .input{
     border: 0;
-    outline: 0 ;
+    outline:0;
     background: #ebfffc;
     color: #555;
     padding: 10px 25px;
@@ -37,6 +39,7 @@ body{background-color: black;
     flex: 1;
     margin-right: 16px;
     font-size: 18px;
+    
 }
 
 .searchbtn{
@@ -52,4 +55,71 @@ body{background-color: black;
 .searchimg{
     width: 30px;
     
+}
+
+.weatherimg{
+    width: 200px;
+}
+
+.temp{
+    font-size: 80px;
+    font-weight: 500;
+    color: #fff;
+}
+.city{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.cloud{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+   
+}
+.detailes{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.humid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+}
+.wind{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 20px;
+    font-size: 20px;
+}
+
+@media (max-width: 500px){
+    .card{
+        padding: 20px 15px;
+    }
+    .temp{
+        font-size: 50px;
+    }
+    .city{
+        font-size: 40px;
+    }
+    .detailes{
+        font-size: 15px;
+    }
+    .humid, .wind{
+        font-size: 15px;
+    }
 }
