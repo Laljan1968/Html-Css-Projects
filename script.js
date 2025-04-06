@@ -57,26 +57,26 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function changeWeatherImage(weatherCondition) {
-    let imgSrc = "/images/default.png";
+    let imgSrc = "default.png";
 
     switch (weatherCondition) {
       case "Clouds":
-        imgSrc = "/images/clouds.png";
+        imgSrc = "clouds.png";
         break;
       case "Clear":
-        imgSrc = "/images/clear.png";
+        imgSrc = "clear.png";
         break;
       case "Rain":
-        imgSrc = "/images/rain.png";
+        imgSrc = "rain.png";
         break;
       case "Mist":
-        imgSrc = "/images/mist.png";
+        imgSrc = "mist.png";
         break;
       case "Snow":
-        imgSrc = "/images/snow.png";
+        imgSrc = "snow.png";
         break;
       default:
-        imgSrc = "/images/default.png";
+        imgSrc = "default.png";
     }
 
     if (weatherImg) weatherImg.src = imgSrc;
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (feelElement) feelElement.innerText = '';
     if (humidityElement) humidityElement.innerText = '';
     if (windElement) windElement.innerText = '';
-    if (weatherImg) weatherImg.src = "/images/error.png";
+    if (weatherImg) weatherImg.src = "error.png";
   }
 
   function handleWeatherSearch() {
@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //    - **Learning Outcome**: **UI Feedback**—always provide users with clear feedback when an error occurs. This improves the user experience and allows users to resolve issues on their own.
 
 // 7. **Check Image Paths and Assets**
-//    - **Issue**: Hardcoded image paths (e.g., `"/images/clouds.png"`) might cause broken images if the paths were incorrect or the images were not available in the specified directory.
+//    - **Issue**: Hardcoded image paths (e.g., `"clouds.png"`) might cause broken images if the paths were incorrect or the images were not available in the specified directory.
 //    - **Solution**: Double-check the asset paths and ensure that they are correct relative to the project structure. Consider using dynamic paths if necessary.
 //    - **Learning Outcome**: **Asset Management**—be mindful of relative paths and ensure that all assets (like images) are correctly linked in the project to avoid broken resources.
 
